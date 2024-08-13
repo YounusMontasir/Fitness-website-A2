@@ -100,8 +100,8 @@
                 </div>
             </div>
             <!-- Calculator section -->
-             <!-- <div class="calculator">
-                <div class="container">
+             <div class="calculator">
+                <div class="container BMI-content">
                     <div class="BMI-chart">
                         <h4 class="BMI-title">BMI Calculator Chart</h4>
                         <table class="BMI-table">
@@ -131,24 +131,32 @@
                     </div>
                     <div class="BMI-calculate">
                         <h4 class="BMI-title">Calculate your BMI</h4>
-                        <p class="description-primary">We believe fitness should be accessible to everyone, everywhere, regardless of income or access to a gym. </p>
+                        <p class="description-primary BMI-description">We believe fitness should be accessible to everyone, everywhere, regardless of income or access to a gym. </p>
                         <form action="">
-                            <div>
-                                <input type="text" placeholder="Height/cm">
-                                <input type="text" placeholder="Weight/kg">
+                            <div class="form-item">
+                                <input type="text" id="item1" placeholder="Height/cm">
+                                <input type="text" id="item2" placeholder="Weight/kg">
                             </div>
-                            <div>
-                                <input type="text" placeholder="Age">
-                                <option type="text" placeholder="Sex" >
+                            <div class="form-item">
+                                <input type="text" id="item3" placeholder="Age">
+                                <select id="sex">
+                                    <option value="" disabled selected>Sex</option>
+                                    <option value="male">Male</option>
+                                    <option value="female">Female</option>
+                                    <option value="other">Other</option>
+                                </select>
                             </div>
-                            <div>
-                                <input type="text" placeholder="Select an activity factor">
+                            <div class="form-item">
+                                <select id="activity-factor">
+                                    <option value="" disabled selected>Select an activity factor</option>
+                                    
+                                </select>
                             </div>
                             
                         </form>
                     </div>
                 </div>
-             </div> -->
+             </div>
 
         <!-- team section -->
          <div class="team container">
