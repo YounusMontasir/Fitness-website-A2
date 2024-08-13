@@ -337,6 +337,24 @@ letter-spacing: 0%;
 text-align: left;
 }
 
+/* meet our member section */
+.member{
+    position: relative;
+}
+.member-details{
+    position: absolute;
+    bottom: 30px;
+}
+.member-name{
+    color: rgb(255, 255, 255);
+font-family: Inter;
+font-size: 20px;
+font-weight: 900;
+line-height: 120%;
+letter-spacing: 0%;
+text-align: left;
+}
+
 
 
 
