@@ -289,6 +289,8 @@ padding: 30px 32px 29px 54px;
     width: 366px;
     height: 312px;
     border-radius: 18px;
+    object-fit:none;
+    object-position: 67% 25%;
     
 }
 /* calculator section  */
@@ -535,6 +537,13 @@ padding: 35px 0px;
 }
 .hero-description{
     width: 285px;
+}
+.hero-btn{
+    width: 48%;
+    margin-left: 4px;
+    padding-left: 10px;
+    padding-right: 10px;
+    text-align: center;
 }
 .hero-small-content{
     margin: auto;
