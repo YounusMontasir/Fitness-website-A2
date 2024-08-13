@@ -37,14 +37,14 @@ letter-spacing: 0.5px;
     width: 80%;
     margin: auto;
 }
-body{
+/* body{
 
 background: rgb(17, 17, 17);
-}
+} */
 /* header section */
 .header{
     
-    background: linear-gradient(180.00deg, rgb(17, 17, 17),rgba(119, 119, 119, 0) 100%);
+    background: linear-gradient(180.00deg, rgb(17, 17, 17),rgba(119, 119, 119, 0) 200%);
 }
 
 /* nav section */
@@ -52,7 +52,7 @@ background: rgb(17, 17, 17);
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 58.5px;
+    padding-top: 58.5px;
 }
 .nav-ul{
     display: flex;
@@ -147,19 +147,23 @@ margin-left: 14px;
 }
 .hero-small-content{
     margin-top: 32px;
+    position: relative;
 }
 .video-tutorial{
     display: flex;
     gap: 8px;
     padding: 20px 23px;
-    width: 12.5rem;
+    width: 12.75rem;
     box-sizing: border-box;
     align-items: center;
 border: 1px solid rgba(255, 255, 255, 0.1);
 border-radius: 12px;
 backdrop-filter: blur(20px);
 background: rgba(48, 48, 48, 0.54);
-transform: translateX(-113px) translateY(-183px);
+/* transform: translateX(-113px) translateY(-183px); */
+position: absolute;
+top: 421px;
+left: -100px;
 }
 .red{
     height: 40px;
@@ -170,7 +174,7 @@ transform: translateX(-113px) translateY(-183px);
 }
 .vid-title{
     color: rgb(250, 250, 249);
-font-size: 24px;
+font-size: 1.5rem;
 font-weight: 900;
 line-height: 24px;
 letter-spacing: 0.3px;
@@ -179,7 +183,7 @@ margin-bottom: 8px;
 }
 .vid-description{
     color: rgba(239, 237, 232, 0.65);
-font-size: 16px;
+font-size: 1rem;
 font-weight: 400;
 line-height: 24px;
 letter-spacing: 0.5px;
@@ -194,12 +198,15 @@ border-radius: 12px;
 
 backdrop-filter: blur(20px);
 background: rgba(255, 255, 255, 0.1);
-transform: translateY(-590px) translateX(230px);
+/* transform: translateY(-590px) translateX(230px); */
+position: absolute;
+top: 125px;
+left: 230px;
 }
 .free-title{
     color: rgb(255, 255, 255);
 font-family: Inter;
-font-size: 40px;
+font-size: 2.5rem;
 font-weight: 900;
 line-height: 40px;
 letter-spacing: 1px;
@@ -207,11 +214,15 @@ letter-spacing: 1px;
 }
 .free-description{
     color: rgba(255, 255, 255, 0.65);
-font-size: 13px;
+font-size: 0.8rem;
 font-weight: 400;
 line-height: 20px;
 letter-spacing: 1px;
 margin-top: 5px;
+}
+/* main */
+main{
+    background: rgb(17, 17, 17);
 }
 
 /* habit section */
@@ -270,11 +281,63 @@ margin-bottom: 6px;
 background: rgb(34, 34, 34);
 padding: 30px 32px 29px 54px;
 }
+.run-description{
+    margin-top: 14px;
+    margin-bottom: 34px;
+}
 .run-img{
     width: 366px;
+    height: 312px;
     border-radius: 18px;
     
 }
+/* calculator section  */
+
+.calculator{
+    background: rgb(34, 34, 34);
+    padding-top: 52px;
+    padding-bottom: 52px;
+}
+.BMI-title{
+    color: rgb(255, 255, 255);
+font-family: Inter;
+font-size: 28px;
+font-weight: 900;
+line-height: 120%;
+letter-spacing: 0%;
+text-align: left;
+}
+
+table{
+    border-collapse: collapse;
+    margin-top: 52px;
+}
+td,th{
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    padding: 15px 20px;
+    
+    
+}
+th{
+    color: rgb(255, 255, 255);
+
+font-size: 16px;
+font-weight: 500;
+line-height: 120%;
+letter-spacing: 0%;
+text-align: left;
+}
+td{
+    color: rgba(255, 255, 255, 0.5);
+
+font-size: 14px;
+font-weight: 400;
+line-height: 120%;
+letter-spacing: 0%;
+text-align: left;
+}
+
+
 
 
 /* media query */
@@ -312,10 +375,16 @@ padding: 30px 32px 29px 54px;
     margin: auto;
 }
 .video-tutorial{
-    transform: translateX(-0px) translateY(-370px);
+    position: absolute;
+    top: 250px;
+    left: -12px;
+    /* transform: translateX(-0px) translateY(-370px); */
 }
 .free{
-    transform: translateY(-670px) translateX(190px);
+    position: absolute;
+    top: 47.6px;
+    left: 194px;
+    /* transform: translateY(-670px) translateX(190px); */
 }
 
 /* habit section */
@@ -330,7 +399,16 @@ padding: 30px 32px 29px 54px;
 /* run section */
 .run{
     flex-direction: column;
+    gap: 31px;
     padding: 33px;
+}
+.run-btn{
+    width: 100%;
+    text-align: center;
+}
+.run-img{
+    width: 100%;
+    height: 70%;
 }
 }
 
